@@ -11,7 +11,7 @@ describe 'navigate song pages' do
     visit song_path(@song.id)
     expect(page).to have_css("h1", text: "My Song")
   end
-
+ 
   it 'displays a link to the genre page' do 
     visit song_path(@song.id)
 

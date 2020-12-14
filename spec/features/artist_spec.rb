@@ -27,7 +27,7 @@ describe 'artist form' do
 
     fill_in 'artist[name]', with: "My artist name"
     fill_in 'artist[bio]', with: "My artist bio"
-
+ 
     click_on "Create Artist"
 
     expect(page).to have_content("My artist name")
